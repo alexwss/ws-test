@@ -10,7 +10,7 @@ public class ConnectionFactory {
 		try {
 			
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			return DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:ORCL", "bpm", "bpm");
+			return DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:ORCL", "user", "password");
 			
 		} catch (ClassNotFoundException e) {
 
