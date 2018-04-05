@@ -1,7 +1,6 @@
 package br.com.unimed.servico;
 
 
-
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -12,7 +11,6 @@ import br.com.unimed.dao.AtendimentoDao;
 import br.com.unimed.modelo.Atendimento;
 import br.com.unimed.modelo.Desenvolvedor;
 import br.com.unimed.modelo.Telefone;
-
 
 @WebService(endpointInterface = "br.com.unimed.servico.SEIAtendimento")
 public class SIBAtendimento implements SEIAtendimento {
@@ -40,12 +38,16 @@ public class SIBAtendimento implements SEIAtendimento {
 		telefones.add(telefone2);				
 		
 		try {
+			
 			atendimento = dao.carregarAtendimento(protocolo);
 			atendimento.setDesenvolvedor(developer);
 			atendimento.setTelefones(telefones);
+						
 		} catch (Exception e) {
-            e.printStackTrace();
-            return null;
+			
+            		e.printStackTrace();
+            		return null;
+			
 		}
 		
 		return atendimento;
