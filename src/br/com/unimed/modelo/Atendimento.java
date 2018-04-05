@@ -26,8 +26,8 @@ public class Atendimento {
 	@XmlElement(name="desenvolvedor")
 	private Desenvolvedor desenvolvedor = new Desenvolvedor();
 		
-    @XmlElementWrapper(name = "Telefones")
-    @XmlElement(name = "Telefone")
+        @XmlElementWrapper(name = "Telefones")
+        @XmlElement(name = "Telefone")  
 	private Collection<Telefone> telefones;
 	
 
