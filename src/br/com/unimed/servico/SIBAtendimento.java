@@ -32,7 +32,7 @@ public class SIBAtendimento implements SEIAtendimento {
 		
 		Collection<Telefone> telefones = new ArrayList<Telefone>();
 		Telefone telefone = new Telefone();
-		telefone.setNumero(998409669);
+		telefone.setNumero(98989889);
 		telefones.add(telefone);
 		
 		Telefone telefone2 = new Telefone();
