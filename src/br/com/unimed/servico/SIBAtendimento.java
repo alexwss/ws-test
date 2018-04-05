@@ -28,7 +28,7 @@ public class SIBAtendimento implements SEIAtendimento {
 		Desenvolvedor developer = new Desenvolvedor();
 		developer.setCargo("System Analist");
 		developer.setIdade(26);
-		developer.setNome("Alex Wellington Santos da Silva");
+		developer.setNome("Alex Santos");
 		
 		Collection<Telefone> telefones = new ArrayList<Telefone>();
 		Telefone telefone = new Telefone();
